@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Crud</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Meu Sistema (Ant 1.0)</h1>
+    </header>
+
+    <main>
+
+        <div>
+            <h2>Cadastro de Alunos</h2>
+        </div>
+            
+        <form class="card" action="javascript: aluno.salvar()">
+            <div class="inputUser">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" pattern="^[A-Za-záàâãéèêíïóôõöúçñÀÂÃÉÈÓÔÕÖÚÇÑ ]{2,16}$" minlength="2" maxlength="16" required placeholder="Nome do Aluno (máx. 16 caracteres)" title="Informe o nome (máx. 16 caracteres)">
+            </div>
+
+            <div class="inputUser">
+                <label for="tel">Telefone</label>
+                <input type="text" id="tel" pattern="\(\d{2}\)-\d{9}" maxlength="14" required placeholder="Telefone do Aluno (Ex: (XX)-XXXXXXXXX)" title="Informe o telefone (Ex: (XX)-XXXXXXXXX)">
+            </div>
+
+            <div class="inputUser">
+                <label for="nota">Nota</label>
+                <input type="number" step="0.1" min="0" max="10" id="nota" required placeholder="Nota do Aluno (entre 0-10)" title="Informe a nota (0-10)">
+            </div>
+
+            <input id="btnForm" class="btn pointer" type="submit" value="Salvar">
+            <button class="btn pointer" type="button" onclick="aluno.cancelar()">Cancelar</button>
+        </form>
+        
+        <h2 id="htable" class="center">Tabela de Alunos Cadastrados</h2>
+
+        <div class="content">
+            <table>
+                <thead>
+                    <th class="center">ID</th>
+                    <th class="center">Nome</th>
+                    <th class="center">Telefone</th>
+                    <th class="center">Nota</th>
+                    <th class="center">Opções</th>
+                </thead>
+
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="center">
+        <p>&copy; 2022 HK Corporation</p>
+        <p>Desenvolvido por: Henrik Oliveira</p>
+    </footer>
+</body>
+</html>

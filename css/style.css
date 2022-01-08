@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #fafbfc;
+}
+
+header {
+    background-color: #1e90ff;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 30px 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Formulário */
+.card {
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 4px 8px lightgrey;
+}
+
+/* Inputs */
+.inputUser {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #1e90ff;
+}
+
+/* Botões */
+.btn {
+    border: none;
+    padding: 10px;
+    outline: none;
+    background-color: #1e90ff;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all ease 0.3s;
+}
+
+.btn:hover {
+    background-color: #1970c7;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* Tabela */
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+table  th {
+    background-color: #1e90ff;
+    color: white;
+}
+
+table th, tr, td {
+    border: 1px solid #000000;
+}
+
+table td img {
+    width: 25px;
+    height: 25px;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: #1e90ff;
+}
+
+tbody > tr:nth-child(2n) {
+    background-color: #d3d3d3;
+}
+
+#htable {
+    padding: 5px;
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1e90ff;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+footer > p {
+    padding: 6px;
+}
+
