@@ -8,6 +8,8 @@ em parceria com a <a href="http://www.alfamidia.com.br">AlfaMidia</a>.
 
 A aplicação consite em um sistema de cadastro de Alunos, onde pode ser realizado algumas manipulações com os dados cadastrados.
 
+Você pode acessar a aplicação <a href="https://henrik-olvr.github.io/CadastroAlunos-js/">clicando aqui</a>.
+
 # Layout do Sistema
 
 <div align="center">
